@@ -25,7 +25,7 @@ def equal():
 def clear():
     entry.delete(0, tk.END)
 
-
+"""
 buttons = [
     ('1', 1, 0), ('2', 1, 1), ('3', 1, 2),
     ('4', 2, 0), ('5', 2, 1), ('6', 2, 2),
@@ -33,6 +33,7 @@ buttons = [
     ('0', 4, 1), ('+', 5, 0), ('-', 5, 1),
     ('*', 5, 2), ('/', 6, 0)
 ]
+"""
 
 for txt, r, c in buttons:
     tk.Button(frame, text=txt, padx=15, pady=5, width=3, command=lambda t=txt: click(t)).grid(row=r, column=c, pady=2)
